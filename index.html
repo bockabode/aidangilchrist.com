@@ -7,221 +7,105 @@
   <style>
     html {
       color-scheme: light;
-      background: #fbfaf7;
-    }
-
-    body {
-      max-width: 780px;
-      margin: 56px auto;
-      padding: 0 24px;
-      color: #2a2a2a;
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: 17px;
-      line-height: 1.65;
-    }
-
-    h1, h2, h3 {
-      font-family: Arial, Helvetica, sans-serif;
-      color: #1a1a1a;
-    }
-
-    h1 {
-      margin: 0;
-      font-size: 34px;
-      font-weight: bold;
-      letter-spacing: -0.5px;
-    }
-
-    h2 {
-      margin-top: 56px;
-      margin-bottom: 8px;
-      font-size: 13px;
-      font-weight: bold;
-      text-transform: uppercase;
-      letter-spacing: 1.5px;
-      color: #8a3b12;
-    }
-
-    h3 {
-      margin: 0 0 4px;
-      font-size: 20px;
-    }
-
-    a {
-      color: #1f4e8c;
-      text-underline-offset: 2px;
-    }
-
-    a:hover {
-      color: #8a3b12;
-    }
-
-    header {
-      padding-bottom: 20px;
-      border-bottom: 2px solid #1a1a1a;
-    }
-
-    .bio {
-      margin: 10px 0 12px;
-    }
-
-    .links {
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 15px;
-    }
-
-    .links a {
-      margin-right: 14px;
-    }
-
-    .project {
-      padding: 28px 0;
-      border-bottom: 1px solid #e2ded6;
-    }
-
-    .project:last-child {
-      border-bottom: none;
-    }
-
-    .project ul {
-      margin: 6px 0 10px;
-      padding-left: 20px;
-    }
-
-    .project li {
-      margin-bottom: 4px;
-    }
-
-    .photos {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 10px;
-      margin: 16px 0 6px;
-    }
-
-    .photos.two {
-      grid-template-columns: repeat(2, 1fr);
-    }
-
-    .photos.four {
-      grid-template-columns: repeat(4, 1fr);
-    }
-
-    figure {
-      margin: 0;
-    }
-
-    figure img {
-      display: block;
-      width: 100%;
-      height: 150px;
-      object-fit: cover;
-      border: 1px solid #d8d4cc;
       background: #ffffff;
     }
 
-    figure a:hover img {
-      border-color: #8a3b12;
-    }
-
-    figcaption {
-      margin-top: 4px;
+    body {
+      max-width: 850px;
+      margin: 40px auto;
+      padding: 0 24px;
+      background: #ffffff;
+      color: #222222;
       font-family: Arial, Helvetica, sans-serif;
-      font-size: 12.5px;
-      color: #777777;
+      font-size: 16px;
+      line-height: 1.6;
     }
 
-    @media (max-width: 600px) {
-      .photos, .photos.four {
-        grid-template-columns: repeat(2, 1fr);
-      }
+    h1, h2, h3 {
+      color: #111111;
+      font-weight: normal;
+    }
+
+    h1 {
+      margin-bottom: 4px;
+      font-size: 32px;
+      text-align: center;
+    }
+
+    h2 {
+      margin-top: 32px;
+      border-bottom: 1px solid #dddddd;
+      padding-bottom: 5px;
+      font-size: 23px;
+    }
+
+    h3 {
+      margin-bottom: 4px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    p {
+      margin-top: 5px;
+    }
+
+    a {
+      color: #0645ad;
+    }
+
+    .bio {
+      margin-top: 0;
+      max-width: 720px;
+    }
+
+    .project {
+      margin: 20px 0;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Aidan Gilchrist</h1>
-    <p class="bio">I'm a senior at Liberty High School in Washington interested in mechanical engineering. I enjoy designing, tinkering, and figuring out the physics behind how things work. Here are some of the things I've been working on.</p>
-    <div class="links">
+    <p class="bio">I'm a senior at Liberty High School in Washington interested in mechanical engineering. I enjoy designing, tinkering, and learning new skills. Check out some of my projects below!</p>
+    <h1>
       <a href="https://www.linkedin.com/in/aidan--gilchrist/">LinkedIn</a>
-      <a href="https://github.com/bockabode">GitHub</a>
+      |
       <a href="mailto:aidangilchrist@outlook.com">aidangilchrist@outlook.com</a>
-    </div>
+      |
+      <a href="https://github.com/bockabode">GitHub</a>
+    </h1>
   </header>
 
   <main>
-    <h2>Engineering &amp; Physics</h2>
+    <h1>Projects</h1>
 
-    <section class="project">
-      <h3>Designing My Own RC Airplane</h3>
-      <p>For the past few months I've been designing my own RC airplane in Onshape to 3D-print and fly. I finished the main design over the summer and have spent my free time since refining it.</p>
-      <ul>
-        <li>Used online CFD simulations and Onshape's wing profile generators to find an airfoil that produces enough lift for the projected weight of about 700 g.</li>
-        <li>Ran acceleration and balance simulations natively in Onshape.</li>
-        <li>Lightening the wings and designing internal structural supports to hit that weight target.</li>
-        <li>Next up: a spar across the wings and a single-prop setup, hopefully finished before the new year.</li>
-      </ul>
-      <div class="photos">
-        <figure><a href="images/plane_cfd.jpg"><img src="images/plane_cfd.jpg" alt="CFD simulation of the wing"></a><figcaption>CFD simulation</figcaption></figure>
-        <figure><a href="images/plane_onshape_sim.jpg"><img src="images/plane_onshape_sim.jpg" alt="Acceleration and balance simulation in Onshape"></a><figcaption>Balance simulation in Onshape</figcaption></figure>
-        <figure><a href="images/plane_wing.jpg"><img src="images/plane_wing.jpg" alt="Wing design with lightening and planned spar in Onshape"></a><figcaption>Wing lightening and planned spar</figcaption></figure>
-      </div>
-      <p>Follow my progress on <a href="https://cad.onshape.com/documents/d939eb50454a62ef87a960cd/w/b7ff33d2d99e3053e613d612/e/69b3fe2ea5b14895e19d9a46">Onshape</a>.</p>
-    </section>
-
-    <section class="project">
-      <h3>Computational Physics in Python</h3>
-      <p>For my final project in Physics last year, I chose to calculate the optimal launch angle for a baseball home run. I've played baseball for years and knew how the ball moves, but not exactly why, so I taught myself Python by building a tool that predicts how far a baseball travels. It's accurate to within about 5&ndash;10%, and I'm now adding the Magnus effect (spin) and altitude-dependent air density.</p>
-      <div class="photos two">
-        <figure><a href="images/python_1.jpg"><img src="images/python_1.jpg" alt="Python code and plotted baseball trajectory"></a><figcaption>Simulated trajectory</figcaption></figure>
-        <figure><a href="images/python_2.jpg"><img src="images/python_2.jpg" alt="Python simulation code"></a><figcaption>Simulation code</figcaption></figure>
-      </div>
-      <p>The code is on <a href="https://github.com/bockabode/physics-simulations">GitHub</a>.</p>
-    </section>
-
-    <section class="project">
-      <h3>FRC 4131 &middot; Liberty Robotics</h3>
-      <p>I design and build competition robots with Liberty Robotics. My work includes CAD, drivetrain and climber design, and mechanisms such as adjustable hoods and indexing systems.</p>
-      <p>Last season I led the design analysis of a flip-climb mechanism to reach the highest (level 3) climb. Starting from Penn State's Robot in 3 Days flip climb, I learned about stress, strain, and material properties like Young's modulus to calculate the forces involved from our robot's weight and weight distribution, and worked out which materials and bolts it would take. It came out to roughly 4,800 N&middot;m of torque to flip our 135 lb robot, so we decided not to build it, but it was one of the most useful things I learned all season.</p>
-      <div class="photos">
-        <figure><a href="images/robot_1.jpg"><img src="images/robot_1.jpg" alt="Working through climb calculations"></a><figcaption>Working through the calculations</figcaption></figure>
-        <figure><a href="images/robot_2.jpg"><img src="images/robot_2.jpg" alt="Liberty Robotics robot in the shop"></a><figcaption>Our robot in the shop</figcaption></figure>
-        <figure><a href="images/robot_3.jpg"><img src="images/robot_3.jpg" alt="Flip climb CAD"></a><figcaption>Flip-climb CAD</figcaption></figure>
-      </div>
-    </section>
-
-    <section class="project">
+     <section class="project">
       <h3>3D Printing</h3>
-      <p>I run a client-facing 3D printing business. Email me for quotes or requests! You can see my most recent client design on <a href="https://cad.onshape.com/documents/8b9cea09273ed4a494f7f385/w/647bffee7da95d5dbc34a5e3/e/2a0c80e32182821026aa9a75?renderMode=0&uiState=6af2b35520c3b60e09160b1b">Onshape</a> (published with approval).</p>
+      <p>I run a client-facing 3D printing business! You can email me for quote or requests. I'm happy to help and excited to gain more experience. You can check out my most recent design for a client on OnShape <a href="https://cad.onshape.com/documents/8b9cea09273ed4a494f7f385/w/647bffee7da95d5dbc34a5e3/e/2a0c80e32182821026aa9a75?renderMode=0&uiState=6af2b35520c3b60e09160b1b">here</a> (published with approval).</p>
     </section>
 
+
     <section class="project">
+      <h3>Physics Simulations</h3>
+      <p>Recently, I've been teaching myself Python to run physics simulations. You can check out my most recent simulation that predicts the movement of baseballs on <a href="https://github.com/bockabode/physics-simulations">my GitHub.</a></p>
+    </section>
+
+<section class="project">
       <h3>RC Cars and Electronics</h3>
-      <p>RC car modifications and custom components, along with Arduino projects like a solar tracker that uses light sensors and a stepper motor.</p>
+      <p>Working on RC car modifications and custom components, along with Arduino-based projects such as a solar tracker using light sensors and a stepper motor. Currently, I'm designing a custom RC airplane. You can check out my progress on OnShape <a href=https://cad.onshape.com/documents/d939eb50454a62ef87a960cd/w/b7ff33d2d99e3053e613d612/e/69b3fe2ea5b14895e19d9a46>here.</a></p>
     </section>
 
-    <h2>Teaching STEM</h2>
-
-    <section class="project">
-      <h3>Apollo FLL (FIRST LEGO League)</h3>
-      <p>As head mentor and program lead at Apollo Elementary, I develop curriculum and guide 25 fourth and fifth graders across five FLL teams as they build LEGO robots and tackle real-world challenges like biodiversity loss.</p>
-      <ul>
-        <li>Launched the "Iron Innovators" outreach program, designing hands-on STEM kits like a syringe-rocket hydraulic model.</li>
-        <li>Serve as Head of Relations, organizing 30 FLL teams across the Issaquah School District.</li>
-        <li>Host Unified Robotics tournaments and lead robot demos at senior centers.</li>
-      </ul>
-    </section>
 
     <section class="project">
-      <h3>Summer of STEM (CAD Camp)</h3>
-      <p>Building on my experience with 3D printing and robotics, I created and led "Summer of STEM," a hands-on camp that introduces elementary school students to digital modeling and engineering. I wrote a curriculum that walks students through Onshape and teaches them to slice and 3D-print their own models.</p>
-      <div class="photos four">
-        <figure><a href="images/stem_student.jpg"><img src="images/stem_student.jpg" alt="A student's CAD project"></a><figcaption>One of my students' projects</figcaption></figure>
-        <figure><a href="images/stem_kit.jpg"><img src="images/stem_kit.jpg" alt="Iron Innovators STEM kit CAD"></a><figcaption>Iron Innovators STEM kit</figcaption></figure>
-        <figure><a href="images/stem_printing.jpg"><img src="images/stem_printing.jpg" alt="3D printing student projects"></a><figcaption>Printing student projects</figcaption></figure>
-        <figure><a href="images/fll_meeting.jpg"><img src="images/fll_meeting.jpg" alt="FLL morning meeting"></a><figcaption>FLL morning meeting</figcaption></figure>
-      </div>
+      <h3>FRC 4131</h3>
+      <p>Designing and building competition robots with Liberty Robotics. My work includes CAD, drivetrain and climber design, and mechanisms such as adjustable hoods and indexing systems.</p>
     </section>
+
+   
+
+    
+
   </main>
+  <p style="margin-top: 400px"> This website was hand-coded by me, Aidan Gilchrist, in HTML</p>
 </body>
 </html>
